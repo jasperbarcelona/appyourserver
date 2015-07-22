@@ -71,7 +71,7 @@ def add_queue(api_key,service_id,user_key,info):
     service = Service.query.filter_by(id=service_id).first()
 
     if user == None:
-        user_id=''
+        user_id=None
     else:
         user_id=user.id
 
