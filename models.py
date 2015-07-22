@@ -102,7 +102,7 @@ class Queued(db.Model, object):
     service_name = db.Column(db.String(30))
     service_desc = db.Column(db.String)
     info = db.Column(db.PickleType())
-    timestamp = db.Column(db.String(20))
+    timestamp = db.Column(db.String(50))
 
     def serialize(self):
         return {
