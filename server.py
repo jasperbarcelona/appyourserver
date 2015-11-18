@@ -111,6 +111,12 @@ def favicon():
     return '',200
 
 
+@app.route('/rollback', methods=['GET', 'POST'])
+def rollback():
+    db.session.rollback()
+    return 'ok'
+
+
 if __name__ == '__main__':
     app.debug = True
     app.run(port=int(os.environ['PORT']),host='0.0.0.0',threaded=True)
