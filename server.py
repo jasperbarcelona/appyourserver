@@ -19,7 +19,6 @@ from werkzeug.datastructures import FileStorage
 from werkzeug import secure_filename
 import helpers.helper as helper
 import validations.validators as validate
-from flask_socketio import SocketIO, emit
 from time import sleep
 import requests
 import datetime
@@ -30,7 +29,6 @@ import os
 
 app = flask.Flask(__name__)
 app.secret_key = '234234rfascasascqweqscasefsdvqwefe2323234dvsv'
-socketio = SocketIO(app)
 
 class IngAdmin(sqla.ModelView):
     column_display_pk = True
