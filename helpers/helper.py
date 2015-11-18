@@ -68,7 +68,7 @@ def generate_svc(msisdn):
         db.session.delete(existing)
         db.session.commit()
 
-    svc = ''.join(random.sample(RANDOM,6))
+    svc = ''.join(random.sample(RANDOM,4))
     new = Svc(
         msisdn=msisdn,
         svc=svc
