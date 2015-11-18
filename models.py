@@ -16,7 +16,7 @@ class Client(db.Model):
     category = db.Column(db.String(30))
     email = db.Column(db.String(60))
     username = db.Column(db.String(30))
-    password = db.Column(db.String(30))
+    password = db.Column(db.String(70))
     contact_no = db.Column(db.String(15))
     country = db.Column(db.String(30))
     city = db.Column(db.String(30))
