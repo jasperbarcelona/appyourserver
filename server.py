@@ -59,7 +59,7 @@ def register():
 @validate.user_api_key
 def get_queue():
     api_key = flask.request.args.get('api_key')
-    return helper.get_user_queues(api_key)`
+    return helper.get_user_queues(api_key)
 
 
 @app.route('/api/user/svc/generate/',methods=['POST'])
